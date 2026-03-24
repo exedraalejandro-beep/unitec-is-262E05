@@ -1,0 +1,33 @@
+@page
+@{
+    // Variables
+    double lado = 5;
+    double L = 10;
+    double C = 6;
+    double altura = 4;
+
+    // Fórmulas (Perímetro: 2 veces el lado + bases)
+    double perimetro = Figura262E05.perimetro(lado, L, C);
+    double area = Figura262E05.area(lado, altura, L, C);
+    double volumen = Figura262E05.volumen(L, C, altura);
+}
+
+<h2>Ejercicio 06: Cálculo del Trapecio</h2>
+
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+    <p>
+        El perímetro de un trapecio de <strong>@lado cm</strong> en cada lado, 
+        con una base larga de <strong>@L cm</strong> y una base corta de <strong>@C cm</strong> es: 
+        <b>@perimetro cm</b>
+    </p>
+
+    <p>
+        El área con una altura de <strong>@altura cm</strong> es: 
+        <b>@area cm<sup>2</sup></b>
+    </p>
+
+    <p> 
+        el volumen de un trapecio con base larga de <strong>@L cm</strong>, una base corta de <strong>@C cm</strong> y una altura de <strong>@altura cm</strong> es:
+        <b>@volumen cm<sup>3</sup></b>
+    </p>
+</div>
